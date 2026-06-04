@@ -22,13 +22,13 @@ export function ThreadTable({ threads }: { threads: ThreadSummary[] }) {
       <tbody>
         {threads.map((thread) => (
           <tr key={thread.id}>
-            <td data-label="状态">
+            <td className="state-cell" data-label="状态">
               {thread.is_pinned ? <span className="tag">置顶</span> : null}
               {thread.is_featured ? <span className="tag">精华</span> : null}
               {thread.is_locked ? <span className="tag">锁定</span> : null}
               {!thread.is_pinned && !thread.is_featured && !thread.is_locked ? "普通" : null}
             </td>
-            <td data-label="标题">
+            <td className="title-cell" data-label="标题">
               <Link href={`/threads/${thread.id}`}>{thread.title}</Link>
               {thread.board_name ? (
                 <span className="muted">　[{thread.board_name}]</span>

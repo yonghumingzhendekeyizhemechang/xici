@@ -24,7 +24,7 @@ export function BoardTable({ boards }: { boards: BoardSummary[] }) {
       <tbody>
         {boards.map((board) => (
           <tr key={board.id}>
-            <td data-label="版名">
+            <td className="title-cell" data-label="版名">
               <Link href={`/boards/${board.slug}`}>{board.name}</Link>
             </td>
             <td data-label="版号">{board.board_no}</td>
