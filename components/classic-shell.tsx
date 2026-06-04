@@ -23,27 +23,57 @@ export async function ClassicShell({ children }: { children: ReactNode }) {
                   <Link href="/">胡同口</Link>
                 </strong>
                 <span>|</span>
-                <Link href="/boards">讨论版目录</Link>
+                <b className="tone-orange">人群</b>：
+                <Link href="/boards?category=old-web">新人类</Link>
                 <span>|</span>
-                <Link href="/apply">新建讨论版</Link>
+                <Link href="/boards?category=life">男人</Link>
                 <span>|</span>
-                <Link href="/boards">排行榜</Link>
+                <Link href="/boards?category=life">女人</Link>
                 <span>|</span>
-                <Link href="/about">帮助</Link>
+                <b className="tone-green">地区</b>：
+                <Link href="/boards?category=city">南京</Link>
+                <span>|</span>
+                <Link href="/boards?category=city">北京</Link>
+                <span>|</span>
+                <Link href="/boards?category=city">上海</Link>
+                <span>|</span>
+                <Link href="/boards?category=city">杭州</Link>
+                <span>|</span>
+                <b>伙伴</b>
+                <span>|</span>
+                <Link className="tone-blue" href="/boards">排行</Link>
+                <span>|</span>
+                <Link className="tone-blue" href="/about">帮助</Link>
                 <span className="top-date">今日：{formatDate(new Date().toISOString())}</span>
               </td>
             </tr>
             <tr>
               <td className="top-links sub">
-                <Link href="/boards?category=old-web">旧网回忆</Link>
+                <Link href="/boards?category=interest">时尚</Link>
                 <span>|</span>
-                <Link href="/boards?category=city">城市巷子</Link>
+                <Link href="/boards?category=interest">数码</Link>
                 <span>|</span>
-                <Link href="/boards?category=life">生活茶馆</Link>
+                <Link className="tone-red" href="/boards?category=old-web">记者</Link>
                 <span>|</span>
-                <Link href="/boards?category=interest">兴趣小版</Link>
+                <Link href="/boards?category=city">旅游</Link>
                 <span>|</span>
-                <Link href="/revival">站长手札</Link>
+                <Link href="/boards?category=life">业主</Link>
+                <span>|</span>
+                <Link href="/boards?category=old-web">IT</Link>
+                <span>|</span>
+                <Link href="/boards?category=life">生活</Link>
+                <span>|</span>
+                <Link href="/boards?category=interest">人文</Link>
+                <span>|</span>
+                <Link href="/boards?category=interest">文学</Link>
+                <span>|</span>
+                <Link href="/boards?category=interest">娱乐</Link>
+                <span>|</span>
+                <Link href="/boards?category=interest">体育</Link>
+                <span>|</span>
+                <Link href="/boards">杂院</Link>
+                <span>|</span>
+                <Link href="/apply">新建讨论版</Link>
                 <span>|</span>
                 {profile ? (
                   <form className="inline-form" action={logoutAction}>

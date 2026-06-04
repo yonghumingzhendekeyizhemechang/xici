@@ -12,10 +12,12 @@ export default async function HomePage() {
       <table className="ad-row" aria-label="通栏信息">
         <tbody>
           <tr>
-            <td>西祠堂巷不是任何旧站的官方重启</td>
-            <td>不复制旧站数据，不导入历史用户</td>
             <td>
-              <Link href="/apply">新建讨论版，一分钟搞定</Link>
+              <b>西祠堂巷</b> 复兴试营业
+            </td>
+            <td>不是旧站官方重启，不导入历史用户</td>
+            <td>
+              <Link href="/apply">申请新版，一分钟填好</Link>
             </td>
           </tr>
         </tbody>
@@ -38,9 +40,9 @@ export default async function HomePage() {
       <section className="headline-block">
         <div className="headline-photo">
           <div className="photo-placeholder">
-            胡同口
+            <span>胡同口</span>
             <br />
-            头图位
+            今日巷报
           </div>
           <Link className="new-board-link" href="/apply">
             新建讨论版，一分钟搞定 &#9658;
@@ -66,6 +68,7 @@ export default async function HomePage() {
         </div>
 
         <div className="headline-event">
+          <div className="event-title">巷口告示</div>
           <ul>
             <li>
               <Link href="/about">本站非官方声明</Link>
@@ -141,7 +144,7 @@ export default async function HomePage() {
       </section>
 
       <Notice>
-        本项目只是一个中文旧网复兴实验：可以开版，可以回帖，可以认门，也可以慢慢等人回来。
+        本项目只是一个中文旧网复兴实验：可以开版，可以回帖，可以认门，也可以慢慢等人回来。页面风格会尽量保留旧论坛的小字号、浅蓝栏、红色强调和窄版入口感。
       </Notice>
     </main>
   );
